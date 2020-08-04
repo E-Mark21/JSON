@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class Main {
 
     public static void main(String[] args) throws JsonProcessingException {
-       String json = "{\n" +
+        String json = "{\n" +
                 "  \"kind\": \"Listing\",\n" +
                 "  \"data\": {\n" +
                 "    \"modhash\": \"\",\n" +
@@ -128,8 +128,8 @@ public class Main {
 
         ObjectMapper objectMapper = new ObjectMapper();
         RedditTopNews rootNode = objectMapper.readValue(json, RedditTopNews.class);
-        String kind = rootNode.kind;
-        System.out.println(kind);
+        //String kind = rootNode.kind;
+        //System.out.println(kind);
         /*RedditTopNews topNews = new RedditTopNews();
         RedditTopNews.Data data = topNews.new Data();
         RedditTopNews.Children children = topNews.new Children();
