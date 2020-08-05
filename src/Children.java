@@ -1,21 +1,20 @@
 public class Children {
 
-    String kind;
-    DataObject dataObject = new DataObject();
+    private String kind;
+    private Data data;
 
+
+    public Data getNewsParams() {
+        return data;
+    }
+    public void setNewsParams(Data data) {
+        this.data = data;
+    }
     public String getKind() {
         return kind;
     }
-
     public void setKind(String kind) {
         this.kind = kind;
     }
-
-    public DataObject getDataObject() {
-        return dataObject;
-    }
-
-    public void setDataObject(DataObject dataObject) {
-        this.dataObject = dataObject;
-    }
 }
+
