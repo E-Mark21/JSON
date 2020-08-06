@@ -1,27 +1,23 @@
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-
-public class RedditTopNews {
+public class NewsArray {
     @JsonProperty("kind")
     private String kind;
     @JsonProperty("data")
-    private Data data;
+    private News news;
 
-    public String getKind(String listing) {
+
+    public String getKind() {
         return kind;
     }
     public void setKind(String kind) {
         this.kind = kind;
     }
-    public Data getData() {
-        return data;
+    public News getNews() {
+        return news;
     }
-    public void setData(Data data) {
-        this.data = data;
+    public void setNews(News news) {
+        this.news = news;
     }
-
-
-
-
 }
 
